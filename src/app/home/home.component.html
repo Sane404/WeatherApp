@@ -2,8 +2,8 @@
     <h1>Weather App</h1>
     <div class="addCity" *ngIf="loggedAsAdmin">
         <div class="inputs">
-            <input type="text" #city_name (keypress)='keyprevent($event)' placeholder="Madrid">
-            <input type="submit" value="Add City" (click)='AddCity(city_name)'>
+            <input type="text" #city_name (keypress)='keyprevent($event)' placeholder="Madrid"/>
+            <input type="submit" value="Add City" (click)='AddCity(city_name)'/>
         </div>
     </div>
     <div class="output">
