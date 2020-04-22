@@ -1,6 +1,6 @@
 .cont{
     background-image: url('../../assets/bg.jpg');
-    height: calc(100vh -60px);
+    height: calc(100vh - 60px);
     background-size: cover;
     background-repeat: round;
 }
@@ -12,7 +12,7 @@ h1{
 }
 
 .inputs{
-    width: 30%;
+    width: 32%;
     margin: 0 auto;
     display: flex;
     margin-bottom: 20px;
@@ -60,13 +60,17 @@ h1{
 } 
 
 } 
-@media screen and (max-width:900px){
+@media screen and (max-width:920px){
     .data-table{
-        width: 48%;
+        width: 45%;
     }
+    
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     .data-table{
         width: 80%;
+    }
+    .cont{
+        height: 100%;
     }
 }
