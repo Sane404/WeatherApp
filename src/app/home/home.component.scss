@@ -1,6 +1,6 @@
 .container{
     background-image: url('../../assets/bg.jpg');
-    min-height: calc(100vh - 60px);
+    // min-height: calc(100vh - 60px);
     background-size: cover;
     background-repeat: round;
 }
@@ -34,6 +34,7 @@ h1{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: calc(100vh - 60px);
 }
 .data-table{
     width: 30%;
