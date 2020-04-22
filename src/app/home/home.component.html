@@ -1,0 +1,43 @@
+<div class="cont">
+
+    <h1>Weather App</h1>
+    <div class="addCity" *ngIf="loggedAsAdmin">
+        <div class="inputs">
+            <input type="text" #city_name (keypress)='keyprevent($event)' placeholder="Madrid">
+            <input type="submit" value="Add City" (click)='AddCity(city_name)'>
+        </div>
+    </div>
+    <div class="output">
+        <div class="data-table" *ngFor='let item of citiesData'>
+            <table>
+                <tr>
+                    <th colspan="2">{{item.name}}, {{item.sys.country}}</th>
+                </tr>
+                <tr>
+                    <td class="attr">Longtitude</td>
+                    <td>{{item.coord.lon}}</td>
+                </tr>
+                <tr>
+                    <td class="attr">Latitude</td>
+                    <td>{{item.coord.lat}}</td>
+                </tr>
+                <tr>
+                    <td class="attr">Weather</td>
+                    <td>{{item.weather[0].main}}</td>
+                </tr>
+                <tr>
+                    <td class="attr">Temperature</td>
+                    <td>{{item.main.temp}} &deg;C</td>
+                </tr>
+                <tr>
+                    <td class="attr">Humidity</td>
+                    <td>{{item.main.humidity}} %</td>
+                </tr>
+                <tr>
+                    <td class="attr">Wind speed</td>
+                    <td> {{item.wind.speed}} m/s</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

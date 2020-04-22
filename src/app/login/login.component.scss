@@ -1,0 +1,73 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    margin: 100px auto;
+    border: 2px solid black;
+    padding: 10px;
+    input{
+        height: 30px;
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+    .submit{
+        height: 40px;
+        cursor: pointer;
+        transition:color .5s, background-color .5s;
+        &:hover{
+            background-color:rgb(49, 49, 133);
+            color: white;
+            border:none;
+        }
+    }
+}
+.register{
+    text-decoration: underline;
+    color:rgb(49, 49, 133);
+    cursor: pointer;
+}
+button{
+    height:40px;
+    display: block;
+    margin: 100px auto;
+    font-size: 20px;
+    font-family: inherit;
+    border:2px solid rgb(49, 49, 133);
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(49, 49, 133);
+        color:white;
+    }
+}
+h1{
+    text-align: center;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 20px;
+    tr{
+        border-bottom: 2px solid #000;
+        td{
+            border-right:2px solid #000 ;
+            text-align: center;
+        }
+    }
+    .admin{
+        font-weight: bold;
+        color: rgb(49, 49, 133)
+    }
+}
+@media screen and (max-width:900px){
+    form{
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    form{
+        width: 80%;
+    }
+}
