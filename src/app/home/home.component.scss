@@ -1,6 +1,6 @@
 .cont{
     background-image: url('../../assets/bg.jpg');
-    // height: 100vh;
+    height: calc(100vh - 60px);
     background-size: cover;
     background-repeat: round;
 }
