@@ -1,6 +1,6 @@
 .cont{
     background-image: url('../../assets/bg.jpg');
-    height: 100%;
+    height: calc(100vh -60px);
     background-size: cover;
     background-repeat: round;
 }
@@ -65,7 +65,7 @@ h1{
         width: 48%;
     }
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:600px){
     .data-table{
         width: 80%;
     }
